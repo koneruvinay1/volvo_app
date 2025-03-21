@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/your-repo/static/css/main.a88e6468.css",
+    "main.js": "/your-repo/static/js/main.410e6783.js",
+    "static/js/453.8bcf70b2.chunk.js": "/your-repo/static/js/453.8bcf70b2.chunk.js",
+    "static/media/bookingcom-logo.png": "/your-repo/static/media/bookingcom-logo.5025f3da1a58154c94b2.png",
+    "index.html": "/your-repo/index.html",
+    "main.a88e6468.css.map": "/your-repo/static/css/main.a88e6468.css.map",
+    "main.410e6783.js.map": "/your-repo/static/js/main.410e6783.js.map",
+    "453.8bcf70b2.chunk.js.map": "/your-repo/static/js/453.8bcf70b2.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.a88e6468.css",
+    "static/js/main.410e6783.js"
+  ]
+}
