@@ -3,7 +3,6 @@ import React, { useState } from "react";
 import "../Cssfiles/HotelList.css";
 import DescriptionPage from "./DescriptionPage";
 
-
 const hotels = [
   {
     id: 1,
@@ -71,29 +70,6 @@ const hotels = [
   },
 ];
 
-// const HotelList = () => {
-//   const [hotels, setHotels] = useState([]);
-//   const [selectedHotel, setSelectedHotel] = useState(null);
-//   const [loading, setLoading] = useState(true);
-//   const [error, setError] = useState(null);
-
-//   useEffect(() => {
-//     const fetchHotels = async () => {
-//       try {
-//         const response = await axios.get("http://localhost:8090/hotel/get"); // Update with your API URL
-//         setHotels(response.data); // Assuming API returns an array of hotels
-//       } catch (err) {
-//         setError(err.message);
-//       } finally {
-//         setLoading(false);
-//       }
-//     };
-
-//     fetchHotels();
-//   }, []);
-
-//   if (loading) return <p>Loading hotels...</p>;
-//   if (error) return <p>Error: {error}</p>;
 const HotelList = () => {
   const [selectedHotel, setSelectedHotel] = useState(null);
 
@@ -102,18 +78,24 @@ const HotelList = () => {
       {selectedHotel ? (
         <DescriptionPage hotel={selectedHotel} onBack={() => setSelectedHotel(null)} />
       ) : (
-        hotels.map((hotel) => (
-          console.log(hotel),
-          <div key={hotel.id} className="hotel-card" onClick={() => setSelectedHotel(hotel)}>
-            <img src={hotel.image} alt={hotel.name} className="hotel-image" />
-            <div className="hotel-info">
-              <h3 className="hotel-name">{hotel.name}</h3>
-              <p className="hotel-location">{hotel.location}</p>
-              <p className="hotel-rating">⭐⭐⭐ {hotel.rate}</p>
-              <p className="hotel-price">INR {hotel.price}</p>
+        hotels.map((hotel) => {
+          console.log(hotel);  // For debugging purpose only
+          return (
+            <div
+              key={hotel.id}
+              className="hotel-card"
+              onClick={() => setSelectedHotel(hotel)}
+            >
+              <img src={hotel.image} alt={hotel.name} className="hotel-image" />
+              <div className="hotel-info">
+                <h3 className="hotel-name">{hotel.name}</h3>
+                <p className="hotel-location">{hotel.location}</p>
+                <p className="hotel-rating">⭐⭐⭐ {hotel.rating}</p>
+                <p className="hotel-price">INR {hotel.price}</p>
+              </div>
             </div>
-          </div>
-        ))
+          );
+        })
       )}
     </div>
   );
