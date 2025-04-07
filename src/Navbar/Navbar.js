@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
+import { ShoppingCart } from "lucide-react";
 import "../Navbar/Nabar.css";
 
 const Navbar = () => {
@@ -25,17 +26,26 @@ const Navbar = () => {
             </ul>
           </li>
 
-          <li className="dropdown">
+          {/* <li className="dropdown">
             <Link to="/news">News ▼</Link>
             <ul className="dropdown-menu">
               <li><Link to="/news/latest">Latest News</Link></li>
               <li><Link to="/news/updates">Updates</Link></li>
             </ul>
-          </li>
+          </li> */}
 
        
           <li><Link to="/contact" className="contact-btn">Contacts</Link></li>
+          <li>
+          
+            <Link to="/cart">
+              <ShoppingCart className="cart-icon" />
+            </Link>
+          </li>
         </ul>
+        
+
+       
 
         <div className="hamburger" onClick={() => setIsOpen(!isOpen)}>
           {isOpen ? "✖" : "☰"}

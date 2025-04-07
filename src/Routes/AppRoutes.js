@@ -13,6 +13,7 @@ import GuestReviewSlider from "../Components/GuestReviewSlider";
 import ReviewRatings from "../Components/ReviewRatings";
 import ImageGallery from "../Components/Image";
 import HotelList from "../Components/HotelList";
+import SearchBar from "../Components/Searchbar";
 
 
 // import SingleRoom from "../Components/SingleRoom";
@@ -25,6 +26,7 @@ const AppRoutes = () => {
     <Routes>
       <Route path="/" element={<Home />} />
       <Route path="/about" element={<About />} />
+      <Route path="/search" element={<SearchBar />} />
       <Route path="/rooms" element={<Rooms />} />
       {/* <Route path="/rooms/single" element={<SingleRoom />} />
       <Route path="/rooms/double" element={<DoubleRoom />} /> */}

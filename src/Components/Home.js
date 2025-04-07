@@ -6,10 +6,12 @@ import GuestReviewSlider from './GuestReviewSlider'
 import ImageGallery from './Image'
 
 
+
 const Home = () => {
   return (
  <>
 <div style={{ marginTop: "100px" }}>
+  
  <Cards/>
  <FeaturesSection/>
  <GuestReviewSlider/>
