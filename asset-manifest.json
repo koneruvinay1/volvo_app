@@ -1,16 +1,16 @@
 {
   "files": {
     "main.css": "/volvo_app/static/css/main.bb9b2327.css",
-    "main.js": "/volvo_app/static/js/main.8c7cf1f9.js",
+    "main.js": "/volvo_app/static/js/main.b7d386e2.js",
     "static/js/453.8bcf70b2.chunk.js": "/volvo_app/static/js/453.8bcf70b2.chunk.js",
     "static/media/bookingcom-logo.png": "/volvo_app/static/media/bookingcom-logo.5025f3da1a58154c94b2.png",
     "index.html": "/volvo_app/index.html",
     "main.bb9b2327.css.map": "/volvo_app/static/css/main.bb9b2327.css.map",
-    "main.8c7cf1f9.js.map": "/volvo_app/static/js/main.8c7cf1f9.js.map",
+    "main.b7d386e2.js.map": "/volvo_app/static/js/main.b7d386e2.js.map",
     "453.8bcf70b2.chunk.js.map": "/volvo_app/static/js/453.8bcf70b2.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.bb9b2327.css",
-    "static/js/main.8c7cf1f9.js"
+    "static/js/main.b7d386e2.js"
   ]
 }
