@@ -9,7 +9,7 @@ function App() {
   return (
     <>
     
-    <Router>
+    <Router basename={process.env.NODE_ENV === "production" ? "/volvo_app" : "/"}>
       <Navbar />
       <AppRoutes />
       
